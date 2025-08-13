@@ -1,3 +1,64 @@
+# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# ─── Frontend / Node.js ───
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+# Local env files
+.env*.local
+
+# App example folder
+app-example
+
+# ─── Python / Backend ───
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Virtual environment folders
+.venv/
+env/
+venv/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Alembic cache
+alembic/*cache*/
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
@@ -37,6 +98,7 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
 # Python
 __pycache__/
 *.pyc
@@ -52,8 +114,8 @@ venv/
 
 # Env files
 .env
-# Python backend
-__pycache__/
-*.pyc
-.venv/
-.env
+.env.*
+!.env.example
+
+# Alembic cache
+alembic/*cache*/
