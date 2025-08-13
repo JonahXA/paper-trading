@@ -37,3 +37,23 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Env files
+.env
+# Python backend
+__pycache__/
+*.pyc
+.venv/
+.env
