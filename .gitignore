@@ -1,71 +1,21 @@
-# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# ─── Frontend / Node.js ───
-node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# Debug logs
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# ─── General / System ───
 .DS_Store
+Thumbs.db
 *.pem
-
-# ─── Frontend / Node.js ───
-node_modules/
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# Debug logs
-npm-debug.*
-yarn-debug.*
 yarn-error.*
+*.log
 
-# macOS
-.DS_Store
-*.pem
-
-# TypeScript
+# ─── TypeScript ───
 *.tsbuildinfo
 
-# Local env files
+# ─── Local env files ───
+.env
+.env.*
 .env*.local
+!.env.example
 
-# App example folder
-app-example
+# ─── App Example ───
+app-example/
 
 # ─── Python / Backend ───
 __pycache__/
@@ -80,27 +30,20 @@ db.sqlite3
 env/
 venv/
 
-# Env files
-.env
-.env.*
-!.env.example
-
-# Alembic cache
+# Alembic migration cache
 alembic/*cache*/
-# React Native / Expo
+
+# ─── React Native / Expo ───
 node_modules/
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 .expo/
 .expo-shared/
-.expo/*
-.expo-shared/*
 dist/
 build/
 web-build/
 
-# iOS
+# ─── iOS ───
 ios/Pods/
 ios/build/
 *.xcodeproj/*
@@ -118,12 +61,13 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-# Android
+# ─── Android ───
 android/.gradle/
 android/app/build/
 android/build/
 *.apk
 *.keystore
 
-# VSCode
+# ─── IDEs / Editors ───
 .vscode/
+.idea/
